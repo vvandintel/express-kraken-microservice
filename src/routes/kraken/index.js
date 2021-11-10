@@ -7,7 +7,7 @@ const getAssetInfo = async (req, res) => {
         const data = (await axios.get(requestUrl)).data
         
         console.log(data)
-        res.send({ data })
+        res.send(data)
     } catch (err) {
         console.log({error: err})
         res.status(500).send({ message: 'Error fetching asset data' })
@@ -66,7 +66,7 @@ const getTicker = async (req, res) => {
         }
         
         console.log(formattedResponse)
-        res.send({ data: formattedResponse })
+        res.send(formattedResponse)
     } catch (err) {
         console.log({error: err})
         res.status(500).send({ message: 'Error fetching ticker data' })
