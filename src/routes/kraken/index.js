@@ -19,10 +19,7 @@ const getTicker = async (req, res) => {
     const requestUrl = `https://api.kraken.com/0/public/Ticker?pair=${assetPair}`
 
     try {
-        const responseData = (await axios.get(requestUrl)).data.result.XXBTZUSD
-
-        console.log(responseData)
-        
+        const responseData = (await axios.get(requestUrl)).data.result[assetPair]
         const result = {
             ask: {
                 price: responseData.a[0],
