@@ -1,0 +1,40 @@
+{
+  "name": "express-kraken-microservice",
+  "version": "1.0.0",
+  "description": "Example NodeJS Express microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvandintel/express-kraken-microservice.git"
+  },
+  "keywords": [
+    "express",
+    "microservice",
+    "node"
+  ],
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Vincent P. Van Dintel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vvandintel/express-kraken-microservice/issues"
+  },
+  "homepage": "https://github.com/vvandintel/express-kraken-microservice#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.4.2",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.2.0",
+    "helmet": "^4.6.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
