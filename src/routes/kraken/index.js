@@ -15,8 +15,8 @@ const getAssetInfo = async (req, res) => {
 }
 
 const getTicker = async (req, res) => {
-    const pair = req.query.pair
-    const requestUrl = `https://api.kraken.com/0/public/Ticker?pair=${pair}`
+    const assetPair = req.query.assetPair
+    const requestUrl = `https://api.kraken.com/0/public/Ticker?pair=${assetPair}`
 
     try {
         const responseData = (await axios.get(requestUrl)).data.result.XXBTZUSD
@@ -62,7 +62,12 @@ const getTicker = async (req, res) => {
 
         const formattedResponse = {
             error: [],
-            XXBTZUSD: result
+            results: [
+                {
+                    assetPair,
+                    ...result
+                }
+            ]
         }
         
         console.log(formattedResponse)
