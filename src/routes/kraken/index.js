@@ -59,12 +59,13 @@ const getTicker = async (req, res) => {
 
         const formattedResponse = {
             error: [],
-            results: [
+            result: 
                 {
-                    assetPair,
-                    ...result
+                    [assetPair]: {
+                        ...result
+                    }
                 }
-            ]
+            
         }
         
         console.log(formattedResponse)
