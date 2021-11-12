@@ -21,6 +21,7 @@ app.use(expressWinston.logger({
 app.get('/', routes.helloRoute)
 app.get('/asset-info', routes.getAssetInfo)
 app.get('/tickers/:assetPair', routes.getTicker)
+app.get('/getClassInfo', routes.wwApiExample1)
 
 // Run the server!
 const start = async () => {
