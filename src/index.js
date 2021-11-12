@@ -20,7 +20,7 @@ app.use(expressWinston.logger({
 
 app.get('/', routes.helloRoute)
 app.get('/asset-info', routes.getAssetInfo)
-app.get('/ticker', routes.getTicker)
+app.get('/tickers/:assetPair', routes.getTicker)
 
 // Run the server!
 const start = async () => {

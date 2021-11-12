@@ -15,7 +15,7 @@ const getAssetInfo = async (req, res) => {
 }
 
 const getTicker = async (req, res) => {
-    const assetPair = req.query.assetPair
+    const assetPair = req.params.assetPair
     const requestUrl = `https://api.kraken.com/0/public/Ticker?pair=${assetPair}`
 
     try {
