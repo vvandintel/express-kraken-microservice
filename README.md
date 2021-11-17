@@ -1,3 +1,3 @@
-# express-microservice 
-Example NodeJS Express microservice
-# express-kraken-microservice
+# developer-experience-service
+
+Example service to illustrate developer experience principles

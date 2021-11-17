@@ -1,7 +1,7 @@
 {
-  "name": "express-kraken-microservice",
+  "name": "developer-experience-service",
   "version": "1.0.0",
-  "description": "Example NodeJS Express microservice",
+  "description": "Example service to illustrate developer experience principles",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vvandintel/express-kraken-microservice.git"
+    "url": "git+https://github.com/vvandintel/developer-experience-service.git"
   },
   "keywords": [
     "express",
@@ -22,9 +22,9 @@
   "author": "Vincent P. Van Dintel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vvandintel/express-kraken-microservice/issues"
+    "url": "https://github.com/vvandintel/developer-experience-service/issues"
   },
-  "homepage": "https://github.com/vvandintel/express-kraken-microservice#readme",
+  "homepage": "https://github.com/vvandintel/developer-experience-service#readme",
   "dependencies": {
     "@grpc/grpc-js": "^1.4.2",
     "axios": "^0.24.0",

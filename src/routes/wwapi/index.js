@@ -7,13 +7,14 @@ const wwApiExample1 = async (req, res) => {
         data: {
             average_grade: 78.4,
             className: 'Intro to Developer Experience',
-            ClassProfessor: 'Vincent P. Van Dintel',
+            ClassProfessor: 'VINCENT P VAN DINTEL',
             NUM_OF_STUDENTS: '7',
             schedule: [
                 'M', 'W', 'F'
             ],
             ['start-data']: '1/1/2021',
-            ['end-date']: '1/31/2020'
+            ['end-date']: '1/31/2020',
+            time: 1637153729
         }
     }
 
@@ -24,7 +25,8 @@ const wwApiExample1 = async (req, res) => {
             ClassProfessor: 'Vincent Van Dintel',
             NUM_OF_STUDENTS: 7,
             startData: '1/1/2021',
-            endDate: '1/31/2020'
+            endDate: '1/31/2020',
+            time: 1637153729
         }
     }
 
